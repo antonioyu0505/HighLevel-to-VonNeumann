@@ -1,10 +1,10 @@
-                                                #===============================================================================#
-                                                #                   Pontificia Universidad Javeriana, Cali                      #
-                                                #                           Facultad de Ingeniería                              #
-                                                #                    Ingeniería de Sistemas y Computación                       #
-                                                #                       Arquitectura del Computador II                          #
-                                                #                               Antonio Yu Chen                                 #
-                                                #===============================================================================#
+#===============================================================================#
+#                   Pontificia Universidad Javeriana, Cali                      #
+#                           Facultad de Ingeniería                              #
+#                    Ingeniería de Sistemas y Computación                       #
+#                       Arquitectura del Computador II                          #
+#                               Antonio Yu Chen                                 #
+#===============================================================================#
 
 import re
 from tkinter import *
@@ -518,7 +518,7 @@ def translate():
 	timeParameter[:] = [0, 0]
 	if(inputText.get("1.0", END) != "\n"):
 		cycles = compiler(cycles)
-	outputFile = open("output.txt", "w")
+	outputFile = open("output.asm", "w")
 	outputFile.write(outputText.get("1.0", "end-1c"))
 	outputFile.close()
 	execText.config(state = NORMAL)
